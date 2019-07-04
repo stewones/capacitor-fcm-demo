@@ -3,8 +3,8 @@ import { Plugins, PushNotification } from '@capacitor/core';
 
 const { PushNotifications } = Plugins;
 import { Platform } from '@ionic/angular';
-// import { FCM } from 'capacitor-fcm';
-// const fcm = new FCM();
+import { FCM } from 'capacitor-fcm';
+const fcm = new FCM();
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -39,30 +39,30 @@ export class HomePage implements OnInit {
   //
   // move to fcm demo
   subscribeTo() {
-    // PushNotifications.register()
-    //   .then(_ => {
-    // fcm
-    //   .subscribeTo({ topic: this.topicName })
-    //   .then(r => alert(`subscribed to topic ${this.topicName}`))
-    //   .catch(err => console.log(err));
-    // })
-    // .catch(err => alert(JSON.stringify(err)));
+    PushNotifications.register()
+      .then(_ => {
+        fcm
+          .subscribeTo({ topic: this.topicName })
+          .then(r => alert(`subscribed to topic ${this.topicName}`))
+          .catch(err => console.log(err));
+      })
+      .catch(err => alert(JSON.stringify(err)));
   }
 
   unsubscribeFrom() {
-    // fcm
-    //   .unsubscribeFrom({ topic: 'test' })
-    //   .then(r => alert(`unsubscribed from topic ${this.topicName}`))
-    //   .catch(err => console.log(err));
-    // if (this.platform.is('android')) fcm.deleteInstance();
+    fcm
+      .unsubscribeFrom({ topic: 'test' })
+      .then(r => alert(`unsubscribed from topic ${this.topicName}`))
+      .catch(err => console.log(err));
+    if (this.platform.is('android')) fcm.deleteInstance();
   }
 
   getToken() {
-    // fcm
-    //   .getToken()
-    //   .then(result => {
-    //     this.remoteToken = result.token;
-    //   })
-    //   .catch(err => console.log(err));
+    fcm
+      .getToken()
+      .then(result => {
+        this.remoteToken = result.token;
+      })
+      .catch(err => console.log(err));
   }
 }

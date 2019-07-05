@@ -5,6 +5,7 @@ const { PushNotifications } = Plugins;
 import { Platform } from '@ionic/angular';
 import { FCM } from 'capacitor-fcm';
 const fcm = new FCM();
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',

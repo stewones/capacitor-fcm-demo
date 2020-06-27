@@ -1,11 +1,11 @@
 PODS:
   - Capacitor (2.2.0):
     - CapacitorCordova
-  - CapacitorCordova (2.2.0)
-  - CapacitorFcm (1.0.0):
+  - CapacitorCommunityFcm (1.0.0):
     - Capacitor
     - FirebaseCore
     - FirebaseMessaging
+  - CapacitorCordova (2.2.0)
   - FirebaseAnalyticsInterop (1.4.0)
   - FirebaseCore (6.4.0):
     - FirebaseCoreDiagnostics (~> 1.0)
@@ -61,8 +61,8 @@ PODS:
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCommunityFcm (from `../../node_modules/@capacitor-community/fcm`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
-  - "CapacitorFcm (from `../../../@capacitor-community-fcm`)"
 
 SPEC REPOS:
   trunk:
@@ -81,15 +81,15 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
+  CapacitorCommunityFcm:
+    :path: "../../node_modules/@capacitor-community/fcm"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
-  CapacitorFcm:
-    :path: "../../../@capacitor-community-fcm"
 
 SPEC CHECKSUMS:
   Capacitor: a8c89aa7384374b805ccc175b4a3374472b5941e
+  CapacitorCommunityFcm: 16a4d0f8862fb3b3eadb58cea6286e38e535e7a0
   CapacitorCordova: a77bb95d31143546af63577154d9852d33c62a82
-  CapacitorFcm: 6941c19dd53e3290f83018c82ff4fd0f64dfd558
   FirebaseAnalyticsInterop: d48b6ab67bcf016a05e55b71fc39c61c0cb6b7f3
   FirebaseCore: 307ea2508df730c5865334e41965bd9ea344b0e5
   FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f
@@ -102,6 +102,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
 
-PODFILE CHECKSUM: bf127334c6946f0e13ffff844d4e2c27aaef9a0a
+PODFILE CHECKSUM: 42eeaa17466f1faa2e0db08c63c5242a60e545a3
 
 COCOAPODS: 1.9.1

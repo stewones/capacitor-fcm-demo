@@ -10,8 +10,7 @@ def capacitor_pods
   # Automatic Capacitor Pod dependencies, do not delete
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
-  pod 'CapacitorFcm', :path => '../../../capacitor-fcm'
-  pod 'CapacitorAnalytics', :path => '../../../capacitor-analytics'
+  pod 'CapacitorFcm', :path => '../../../@capacitor-community-fcm'
   # Do not delete
 end
 

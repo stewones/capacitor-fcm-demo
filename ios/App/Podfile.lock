@@ -61,7 +61,7 @@ PODS:
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
-  - "CapacitorCommunityFcm (from `../../node_modules/@capacitor-community/fcm`)"
+  - "CapacitorCommunityFcm (from `../../../@capacitor-community-fcm`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
 
 SPEC REPOS:
@@ -82,7 +82,7 @@ EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorCommunityFcm:
-    :path: "../../node_modules/@capacitor-community/fcm"
+    :path: "../../../@capacitor-community-fcm"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
 
@@ -102,6 +102,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
 
-PODFILE CHECKSUM: 42eeaa17466f1faa2e0db08c63c5242a60e545a3
+PODFILE CHECKSUM: 850cd04af276483bf2a5d35a3ac8fa1c68828c1a
 
 COCOAPODS: 1.9.1

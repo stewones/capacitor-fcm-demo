@@ -1,6 +1,6 @@
 package io.capacitor.starter;
 
-import com.capacitorjs.fcm.FCMPlugin;
+import com.getcapacitor.fcm.FCMPlugin;
 
 import android.os.Bundle;
 

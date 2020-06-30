@@ -1,5 +1,7 @@
 # capacitor-fcm-demo
 
+> Project archived. use the [official demo here](https://github.com/capacitor-community/fcm/tree/master/example)
+
 - `git clone https://github.com/stewwan/capacitor-fcm-demo`
 - `cd capacitor-fcm-demo && npm install`
 - add your `GoogleService-Info.plist` to `ios/App/App`
